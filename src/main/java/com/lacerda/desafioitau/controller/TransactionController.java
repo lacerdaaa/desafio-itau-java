@@ -19,7 +19,7 @@ public class TransactionController {
 
     @PostMapping
     public void salvar(@RequestBody TransactionRequest request) {
-        System.out.println(request);
+        service.salvar(request);
     }
 }
 
