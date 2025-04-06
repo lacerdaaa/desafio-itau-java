@@ -14,8 +14,5 @@ public class TransactionService {
 
     public void salvar( TransactionRequest request) {
         transactions.add(new Transaction(request.valor(), request.dataHora()));
-        System.out.printf("Valor atual: %.2f\n", request.valor());
-        System.out.printf("Data de hora: %s\n", request.dataHora().toString());
-        System.out.println("Salvo com sucesso");
     }
 }
